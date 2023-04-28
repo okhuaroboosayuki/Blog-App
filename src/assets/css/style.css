@@ -1,3 +1,8 @@
+:root{
+    --logo-font: 'Pacifico', cursive;
+    --body-font: 'Poppins', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
