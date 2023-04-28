@@ -1,7 +1,12 @@
 import "./assets/css/style.css";
+import HomeNavBar from "./components/HomeNavBAar";
 
 function App() {
-  return <div className="app">App</div>;
+  return (
+    <>
+      <HomeNavBar />
+    </>
+  )
 }
 
 export default App;
