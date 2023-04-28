@@ -1,12 +1,21 @@
-:root{
-    --logo-font: 'Pacifico', cursive;
-    --body-font: 'Poppins', sans-serif;
+:root {
+  --logo-font: "Pacifico", cursive;
+  --title-font: 'Castoro', serif;
+  --body-font: "Poppins", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #F9FAFB;
+}
