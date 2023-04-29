@@ -1,12 +1,13 @@
 .footer_container {
     width: 70%;
+    padding: 30px;
 
     .footer_bottom {
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        padding: 10px 0;
+        padding: 10px;
         margin-top: 10px;
 
         .top {
@@ -20,7 +21,7 @@
                 flex-direction: column;
                 align-items: center;
                 flex: 1;
-                margin-bottom: 10px;
+                margin-bottom: 25px;
                 margin-left: 70px;
 
                 .title {
@@ -84,6 +85,7 @@
             .social_links {
                 gap: 13px;
                 align-self: flex-start;
+                margin-left: 20px;
 
                 li {
                     a {
@@ -104,13 +106,13 @@
                 color: rgb(118, 123, 127);
 
                 ul {
-                    li{
+                    li {
                         margin: 0 8px;
 
-                        a{
+                        a {
                             color: #000;
 
-                            &:hover{
+                            &:hover {
                                 text-decoration: underline;
                                 color: rgb(4, 118, 111);
                             }
@@ -126,20 +128,20 @@
                         .copyright_icon {
                             font-size: 13px;
                         }
-
                     }
                 }
 
-                .dev{
+                .dev {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-top: 5px;
 
-                    span{
-                        a{
+                    span {
+                        a {
                             color: #000;
 
-                            &:hover{
+                            &:hover {
                                 text-decoration: underline;
                                 color: rgb(4, 118, 111);
                             }
@@ -152,6 +154,7 @@
         .title {
             font-size: 16px;
             text-transform: capitalize;
+            font-family: var(--title-font);
         }
     }
 }
@@ -161,7 +164,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #D6D9DB;
     padding: 20px 0;
     width: 100%;
     gap: 20px;
@@ -174,10 +177,11 @@
         width: 100%;
 
         .newsletter_top_heading {
-            font-size: 44px;
+            font-size: 42px;
             font-family: var(--title-font);
             font-weight: 400;
             padding: 0 30px;
+            text-align: center;
         }
 
         .newsletter_top_paragraph {
@@ -235,6 +239,258 @@
                 background-color: rgb(4, 118, 111);
                 color: #fff;
                 border: 0.5px solid grey;
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .footer_container {
+        .footer_bottom {
+            .top {
+                margin-left: 25px;
+                .top_left {
+                    margin-left: 0;
+                }
+            }
+
+            .bottom{
+                gap: 0;
+                .social_links{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    
+    .newsletter{
+        .newsletter_bottom{
+            button{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .footer_container {
+        .footer_bottom {
+            .top {
+                margin-left: 15px;
+
+                .top_left {
+                    margin-bottom: 0px;
+                }
+
+                .top_right {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1064px) {
+    .footer_container {
+        width: 80%;
+        .footer_bottom {
+            .top {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer_container {
+        .footer_bottom {
+            .top {
+                .top_left {
+                    .title {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .top_right {
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        .newsletter_top {
+            .newsletter_top_heading,
+            .newsletter_top_paragraph {
+                padding: 0;
+            }
+        }
+
+        .newsletter_bottom {
+            button {
+                width: 27%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footer_container {
+        width: 100%;
+        .footer_bottom {
+            .top {
+                flex-direction: column;
+
+                .top_right {
+                    margin-bottom: 0;
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin-left: 20px;
+
+                    .top_right-left_side,
+                    .top_right-right_side {
+                        flex: 1;
+                    }
+                }
+            }
+
+            .bottom {
+                .social_links,
+                .bottom_right {
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        .newsletter_bottom {
+            button {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 633px) {
+    .footer_container {
+        .footer_bottom {
+            .top {
+                .top_right {
+                    margin-left: 15px;
+                }
+            }
+
+            .bottom {
+                .bottom_right {
+                    width: 100%;
+
+                    ul {
+                        .copyright {
+                            padding-right: 4px;
+                        }
+
+                        li {
+                            margin: 0 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 581px) {
+    .footer_container {
+        .footer_bottom {
+            .top {
+                .top_right {
+                    margin-left: 15px;
+                }
+            }
+
+            .bottom {
+                flex-direction: column;
+                .bottom_right {
+                    width: 100%;
+                    display: flex;
+                    margin-top: 10px;
+
+                    ul {
+                        .copyright {
+                            padding-right: 4px;
+                        }
+
+                        li {
+                            margin: 0 3px;
+                        }
+                    }
+
+                    .dev {
+                        margin-top: 0;
+                        border-left: 1px solid rgb(118, 123, 127);
+                        padding-left: 4px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        .newsletter_top {
+            .newsletter_top_heading {
+                font-size: 41px;
+            }
+        }
+    }
+}
+
+@media (max-width: 485px) {
+    .footer_container {
+        .footer_bottom {
+            .bottom {
+                .bottom_right {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .dev {
+                        margin-top: 4px;
+                        border-left: none;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        .newsletter_top{
+            .newsletter_top_heading {
+                font-size: 35px;
+            }
+            .newsletter_top_paragraph {
+                font-size: 16px;
+            }
+        }
+        .newsletter_bottom {
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                width: 100%;
+
+                &::-webkit-input-placeholder {
+                    text-align: center;
+                    font-size: 15px;
+                }
+            }
+
+            button {
+                width: 100%;
+                margin: 0;
             }
         }
     }
