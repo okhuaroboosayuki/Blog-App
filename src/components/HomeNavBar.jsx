@@ -2,13 +2,13 @@ import "../assets/scss/navbar.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
 function HomeNavBar() {
   return (
     <nav className="nav_bar">
       <h1 className="logo">
-        <a href="#">Blog</a>
+        <a href="#">Vitality Avenue</a>
       </h1>
 
       <div className="nav_list">
@@ -44,6 +44,17 @@ function HomeNavBar() {
 
         {/* <>{searchState.search}</> */}
         {/* Search input placed above the search icon */}
+      </div>
+
+      <div className="search_input">
+        <form className="search_form">
+          <input
+            type="search"
+            placeholder="Search for..."
+            className="header_search_input"
+          />
+          <button className="search_close"></button>
+        </form>
       </div>
 
       <div className="nav_extras">
