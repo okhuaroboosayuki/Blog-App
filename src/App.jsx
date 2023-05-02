@@ -1,22 +1,24 @@
 import "./assets/css/style.css";
 import HomeNavBar from "./components/HomeNavBar";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="home_page">
-      <div className="nav">
+    <section className="home_page">
+      <section className="nav">
         <HomeNavBar />
-      </div>
+      </section>
 
-      <div className="content">
+      <section className="content">
+        <Hero />
         content goes here
-      </div>
+      </section>
 
-      <div className="footer">
+      <section className="footer">
         <Footer />
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 
