@@ -1,0 +1,116 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    top: -99px;
+
+    .hero_left,
+    .hero_right {
+        flex: 1;
+    }
+
+    .hero_left {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 120%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        bottom: 0;
+        left: 0;
+
+        &::before {
+            z-index: 2;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: black;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, black 94%);
+            opacity: 0.3;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    .hero_right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+        margin-right: 6rem;
+
+        .hero_article {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            margin-top: 1rem;
+
+            .hero_article_container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 2rem 1rem;
+                width: 100%;
+
+                .hero_article_category {
+                    margin-bottom: 1rem;
+                    width: 100%;
+
+                    span {
+                        width: 100%;
+                        a {
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 0.8rem;
+                            font-weight: 200;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                color: rgb(4, 118, 111);;
+                            }
+                        }
+                    }
+                }
+
+                .hero_article_title{
+                    margin-bottom: 20px;
+                    width: 100%;
+                    a{
+                        font-size: 3.5rem;
+                        font-weight: 400;
+                        font-family: var(--title-font);
+                        text-transform: capitalize;
+                    }
+                }
+
+                .hero_article_text{
+                    font-weight: 300;
+                }
+
+                .read_more{
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-size: 11.5px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .scroll_pagination{
+        display: flex;
+        flex-direction: column;
+    }
+}
