@@ -9,10 +9,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 body {
@@ -23,16 +25,26 @@ body {
 .home_page {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav,
+.nav, .footer, .content {
+  width: 100%;
+}
+
+.nav{
+  background: transparent;
+}
+
+/* .nav,
 .footer {
   flex: 1;
 }
 
 .content {
   flex: 8;
-}
+} */
 
 .footer {
   background-color: rgb(232, 235, 238);
@@ -42,5 +54,4 @@ body {
   flex-direction: column;
   align-items: center;
   color: #000;
-  width: 100%;
 }
