@@ -11,6 +11,7 @@
     font-family: var(--logo-font);
     font-size: 1.75rem;
     flex: 6;
+    position: relative;
 
     a{
       color: #fff;
@@ -234,6 +235,23 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .nav_bar {
+    .logo{
+      left: -2rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .nav_bar {
+    .logo{
+      font-size: 1.4rem;
     }
   }
 }
