@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import 'swiper/scss/effect-fade';
+import "animate.css";
 
 function Hero() {
   const pagination = {
