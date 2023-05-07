@@ -93,7 +93,6 @@
                         animation-delay: 0.5s;
 
                         span {
-                            width: 100%;
                             a {
                                 text-transform: uppercase;
                                 letter-spacing: 2px;
@@ -309,11 +308,12 @@
                 margin-right: 0;
                 width: 100%;
                 left: 0;
+                
                 .hero_article {
                     position: absolute;
                     background-color: white;
-                    padding: 1rem 4rem;
-                    max-height: 550px;
+                    padding: 15rem 4rem;
+                    max-height: 500px;
                     overflow: hidden;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                     width: 32rem;
