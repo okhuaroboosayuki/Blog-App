@@ -5,6 +5,7 @@
     position: relative;
     overflow: hidden;
     top: -99px;
+    background-color: #f9fafb;
 
     .hero_wrapper {
         width: 100%;
@@ -485,7 +486,7 @@
                 }
 
                 .swiper-pagination-bullet-active {
-                    background-color: #fff;
+                    background-color: #f9fafb;
                     color: black;
 
                     &::after {
