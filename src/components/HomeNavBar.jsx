@@ -3,20 +3,21 @@ import SearchIcon from "@mui/icons-material/Search";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
 
 function HomeNavBar() {
   return (
     <nav className="nav_bar">
       <h1 className="logo">
-        <a href="#">Vitality Avenue</a>
+        <Link to={"/"}>Vitality Avenue</Link>
       </h1>
 
       <div className="nav_list">
         <ul>
           <li>
-            <a href="#" className="nav_item">
+            <Link to={"/"} className="nav_item">
               Home
-            </a>
+            </Link>
           </li>
           <li className="has_children">
             <a href="#" className="nav_item">
@@ -31,14 +32,14 @@ function HomeNavBar() {
             <KeyboardArrowDownIcon className="arrow_down" />
           </li>
           <li>
-            <a href="#" className="nav_item">
+            <Link to={"/about"} className="nav_item">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="nav_item">
+            <Link to={"/contact"} className="nav_item">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
