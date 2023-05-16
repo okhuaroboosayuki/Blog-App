@@ -1,0 +1,44 @@
+.home_page {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .masonry_wrapper {
+            width: 92%;
+            // overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0 50px 0;
+
+            .MuiMasonry-root {
+                width: 100%;
+                overflow: hidden;
+
+                .blog {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .blog_image {
+                        width: 100%;
+
+                        a {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                object-fit: cover;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
