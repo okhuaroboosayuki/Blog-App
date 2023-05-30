@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   const { loading, error, data } = useFetch(
-    "http://localhost:1337/api/blogs?populate=media&sort=createdAt:desc&pagination[page]=1&pagination[pageSize]=3"
+    "https://blog-app-k79o.onrender.com/api/blogs?populate=media&sort=createdAt:desc&pagination[page]=1&pagination[pageSize]=3"
   );
 
   const pagination = {
@@ -46,7 +46,7 @@ function Hero() {
                 <div
                   className="hero_left"
                   style={{
-                    backgroundImage: `url(http://localhost:1337${blog.attributes.media.data.attributes.url})`,
+                    backgroundImage: `url(${blog.attributes.media.data.attributes.url})`,
                   }}
                 ></div>
 

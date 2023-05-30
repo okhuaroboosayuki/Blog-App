@@ -9,19 +9,8 @@ import { Link } from "react-router-dom";
 
 function App() {
   const { loading, error, data } = useFetch(
-    "http://localhost:1337/api/blogs?populate=media&sort=publishedAt:desc"
+    "https://blog-app-k79o.onrender.com/api/blogs?populate=media&sort=createdAt:desc"
   );
-
-  // const sortData = (data) => {
-  //   data.sort((a, b) => {
-  //     const dateA = new Date(a.attributes.publishedAt);
-  //     const dateB = new Date(b.attributes.publishedAt);
-
-  //     return dateA - dateB;
-  //   });
-  // };
-
-  // console.log(sortData(data));
 
   return (
     <section className="home_page">
@@ -43,7 +32,7 @@ function App() {
                   <div className="blog_image">
                     <Link to={`/blogs/${blog.attributes.title}`}>
                       <img
-                        src={`http://localhost:1337${blog.attributes.media.data.attributes.formats.small.url}`}
+                        src={blog.attributes.media.data.attributes.formats.small.url}
                         alt={
                           blog.attributes.media.data.attributes.alternateText
                         }
@@ -74,21 +63,6 @@ function App() {
             </Masonry>
           </div>
         )}
-        {/* <div className="masonry_wrapper">
-          <Masonry columns={4} spacing={4} >
-            {data.map((blog) => (
-              <div className="blog" key={blog.id}>
-                <div className="blog_image">
-                  <img src={blog.image} alt={blog.title} />
-                </div>
-                <div className="blog_content">
-                  <h1>{blog.title}</h1>
-                  <p>{blog.description}</p>
-                </div>
-              </div>
-            ))}
-          </Masonry>
-        </div> */}
       </section>
 
       <section className="footer">
